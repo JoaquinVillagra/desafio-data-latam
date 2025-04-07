@@ -49,7 +49,8 @@ jsonCopiar{
 
 ## Solution (In Spanish from here!)
 
----
+![Arquitectura propuesta](./Arquitectura_propuesta.png "Arquitectura Propuesta")
+
 
 ## Descripción y Justificación de la Arquitectura
 
@@ -90,7 +91,7 @@ El núcleo de la analítica se apoya en **BigQuery**:
 
 ### 6. Herramientas de Analítica
 Para la capa de consumo:
-- Herramientas como **Looker** o **Data Studio** (entre otras de BI) se conectan directamente a BigQuery para generar reportes, dashboards y análisis ad-hoc.  
+- Herramientas como **Looker** o **Power BI** (entre otras de visualización) se conectan directamente a BigQuery para generar reportes, dashboards y análisis ad-hoc.  
 - La federación de datos queda transparente para los usuarios finales, ya que BigQuery se encarga de la orquestación subyacente.
 
 ---
