@@ -30,8 +30,12 @@ Any trade-offs and fallback strategies (e.g., caching, materialized views)
 1. Your solution must be in a public GitHub repository.
 2. To submit your challenge, you must make a `POST` request to `https://advana-challenge-check-api-cr-k4hdbggvoq-uc.a.run.app/data-engineer`. This is an example of the body you must send:
 ```json
-cl
-```
+     {
+       "name": "Juan Perez",
+       "mail": "juan.perez@example.com",
+       "github_url": "https://github.com/juanperez/latam-challenge.git"
+     }
+ ```
 
 PLEASE, SEND THE REQUEST ONLY ONCE.
 If your request was successful, you will receive this message:
