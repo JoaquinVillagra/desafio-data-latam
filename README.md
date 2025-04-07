@@ -30,11 +30,7 @@ Any trade-offs and fallback strategies (e.g., caching, materialized views)
 1. Your solution must be in a public GitHub repository.
 2. To submit your challenge, you must make a `POST` request to `https://advana-challenge-check-api-cr-k4hdbggvoq-uc.a.run.app/data-engineer`. This is an example of the body you must send:
 ```json
-    {
-      "name": "Juan Perez",
-      "mail": "juan.perez@example.com",
-      "github_url": "https://github.com/juanperez/latam-challenge.git"
-    }
+cl
 ```
 
 PLEASE, SEND THE REQUEST ONLY ONCE.
@@ -100,3 +96,20 @@ Para la capa de consumo:
 
 Esta arquitectura resuelve la dispersión y la heterogeneidad de datos mediante **ingesta federada**, normalización y **gobernanza centralizada**. Al combinar servicios como **Dataflow** (para procesamiento en streaming y batch), **BigQuery** (para analítica y federación) y **Dataplex**/**Data Catalog** (para la gestión y descubrimiento de datos), se garantiza un entorno escalable, confiable y optimizado para análisis cross-region. Además, la capa de BI se facilita al exponer un punto único de acceso a la información, independiente de dónde resida físicamente cada fuente.
 
+--- 
+
+## Envío del desafío
+Se deja como respaldo el comando efectuado para enviar el repositorio. 
+
+```bash
+
+curl -X POST \
+     -H "Content-Type: application/json" \
+     -d '{
+       "name": "Joaquín Villagra Pacheco",
+       "mail": "joaquin.villagra@udd.cl",
+       "github_url": "https://github.com/JoaquinVillagra/desafio-data-latam"
+     }' \
+     https://advana-challenge-check-api-cr-k4hdbggvoq-uc.a.run.app/data-engineer
+
+```
